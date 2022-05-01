@@ -1,0 +1,29 @@
+body {
+  min-height: 100vh;
+  background-color: rgb(34, 33, 33);
+  color: #fff;
+  padding:1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 30px !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.color-display {
+  width: 15px;
+  height:15px;
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+input {
+  margin-top: 1em;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color:rgb(37, 41, 37)
+}
