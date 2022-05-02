@@ -1,0 +1,27 @@
+.App {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+.App h1 {
+  font-size: 50px;
+  color:white ;
+}
+
+.App h2 {
+  font-size: 20px;
+  color:white ;
+}
+
+.App p {
+  font-size: 15px;
+  color:white ;
+}
+
+
+
+.App img {
+  width: 40%;
+}
