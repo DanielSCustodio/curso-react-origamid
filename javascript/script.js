@@ -67,3 +67,12 @@ console.log(precosFiltros);
 
 const precosNumeros = precosFiltros.map(p => Number(p.replace('R$', '')));
 console.log(precosNumeros);
+
+const playerOne = 10;
+const playerTwo = 20;
+const vencedor = playerOne > playerTwo ? 'PlayerOne Venceu' : 'PlayerTwo Venceu'; //operador ternario
+console.log(vencedor);
+
+const active = true;
+const button = active && 'Botão ativo'; //operador &&
+console.log(button);
