@@ -4,8 +4,8 @@ import Arrays from "./Arrays";
 const App = () => {
   return (
     <>
-      <Compras/>
-      <Arrays/>
+      <Compras />
+      <Arrays />
     </>
   );
 };
