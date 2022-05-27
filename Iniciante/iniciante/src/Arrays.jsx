@@ -14,7 +14,7 @@ function Arrays () {
     .reduce( ( total, atual ) => total + atual, 0 );
 
   const response = [ Mario ].map( ( item ) => (
-    <section>
+    <section key={ item.id }>
       <p>Nome: { item.cliente }</p>
       <p>Idade: { item.idade }</p>
       <p>Total: { total }</p>
