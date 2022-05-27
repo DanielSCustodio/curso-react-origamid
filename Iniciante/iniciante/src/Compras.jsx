@@ -1,12 +1,11 @@
-import React from "react";
-import { Luana, Mario } from "./util/data";
-const dados = Mario;
+import { Luana } from './util/data';
 
-const total = dados.compras
-  .map((item) => +item.preco.replace("R$", ""))
-  .reduce((total, atual) => total + atual, 0);
+const Compras = () => {
+  const dados = Luana;
+  const total = dados.compras
+    .map((item) => Number(item.preco.replace("R$", "")))
+    .reduce((total, atual) => total + atual, 0);
 
-const App = () => {
   return (
     <>
       <p>Nome: {dados.cliente} </p>
@@ -19,9 +18,8 @@ const App = () => {
         </span>
       </p>
     { total > 10000&&<p>Tá gastando muito</p>}
-
     </>
   );
 };
 
-export default App;
+export default Compras;
