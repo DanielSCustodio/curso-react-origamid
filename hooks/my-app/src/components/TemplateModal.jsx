@@ -7,7 +7,7 @@ function TemplateModal () {
   return (
     <div>
       <Modal modal={ modal } />
-      <ButtonModal setModal={ setModal } modal={ modal } />
+      <ButtonModal setModal={ setModal } />
     </div>
   )
 }
