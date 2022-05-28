@@ -8,7 +8,7 @@ function ButtonModal ( { setModal } ) {
     setModal( ( modal ) => !modal ); //Elimina a necessidade de passar modal como props
   }
   return (
-    <button onClick={ handleClick } style={ { position: "fixed", left: "2%", top: "30%" } }>
+    <button onClick={ handleClick } style={ { position: "fixed", left: "2%", top: "45%" } }>
       { ativo ? 'Abrir Modal' : 'Fechar Modal' }
     </button>
   )
