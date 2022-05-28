@@ -1,6 +1,7 @@
 import Compras from "./Compras";
 import Arrays from "./Arrays";
 import Produtos from "./Produtos";
+import Props from "./Props";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Compras />
       <Arrays />
       <Produtos />
+      <Props />
     </>
   );
 };
