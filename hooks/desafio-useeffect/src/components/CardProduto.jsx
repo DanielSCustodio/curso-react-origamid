@@ -18,9 +18,9 @@ function CardProduto({ produto }) {
   if (data === null) return null;
   return (
     <div>
-      {loading && <p>Carregando...</p>}
       <h1>{data.nome}</h1>
       <p>{data.preco}</p>
+      {loading && <p>Carregando...</p>}
     </div>
   );
 }
