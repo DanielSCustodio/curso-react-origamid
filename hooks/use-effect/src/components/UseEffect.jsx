@@ -20,8 +20,8 @@ function UseEffect () {
   return (
     <div>
       { data && (
-        data.map( ( { id, name, username, email } ) => (
-          <div key={ id } style={ { display: "flex" } }>
+        data.map( ( { id, name, username, email }, i ) => (
+          <div key={ i + 1 } style={ { display: "flex" } }>
             <p>{ name }</p>
             <p>{ username }</p>
             <p>{ email }</p>
