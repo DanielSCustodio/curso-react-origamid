@@ -9,7 +9,6 @@ const List = () => {
     setItems( [ ...items, value ] );
     setValue( '' );
     inputElement.current.focus();
-    console.log( items );
   }
   return (
     <div>
