@@ -1,45 +1,32 @@
 import React from 'react'
 
+const colorsArray = ['Azul', 'Vermelho', 'Verde', 'Laranja', 'Roxo'];
+
 const CheckBox = () => {
-  const [colores, setColores] = React.useState(['azul', 'vermelho']);
+  const [colors, setColors] = React.useState(['Azul', 'Vermelho']);
 
   const handleChange =({target})=> {
       if(target.checked){
-        setColores([...colores, target.value])
+        setColors([...colors, target.value])
       }else{
-        setColores(colores.filter((color)=> color !== target.value))
+        setColors(colors.filter((color)=> color !== target.value))
       }
   }
 
   return (
     <div>
-      <label>
-        <input
-          type="checkbox"
-          value="azul"
-          checked={colores.includes("azul")}
-          onChange={handleChange}
-        />
-        Azul
+      {colorsArray.map((color) =>(
+        <label>
+          <input
+            type="checkbox"
+            value={color}
+            checked={colors.includes(color)}
+            onChange={handleChange}
+          />
+          {color.toLocaleUpperCase()}
       </label>
-      <label>
-        <input
-          type="checkbox"
-          value="vermelho"
-          checked={colores.includes("vermelho")}
-          onChange={handleChange}
-        />
-        Vermelho
-      </label>
-      <label>
-        <input
-          type="checkbox"
-          value="verde"
-          checked={colores.includes("verde")}
-          onChange={handleChange}
-        />
-        Verde
-      </label>
+      ))}
+
     </div>
   )
 }
